@@ -38,6 +38,9 @@ def form():
     else:
     	return 'bad'
 
+@app.route('/sw.js')
+def sw():
+    return app.send_static_file('sw.js')
 
 
 def request_api(query_char):
