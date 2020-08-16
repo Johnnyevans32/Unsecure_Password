@@ -1,10 +1,10 @@
 {
   "name": "Password Checker",
   "short_name": "Unsecure Words",
-  "start_url": "/index.html",
+  "start_url": "/index",
   "display": "standalone",
-  "background_color": "#c94b4b",
-  "theme_color": "#c94b4b", 
+  "background_color": "#000000",
+  "theme_color": "#000000", 
   "orientation": "portrait-primary",
   "icons": [
     {

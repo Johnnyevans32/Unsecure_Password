@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Password Checker</title>
+    <title>Analysis || Password Checker</title>
     <meta property="og:type" content="website">
     <meta property="og:description" content="Check if your PASSWORD has hacked with complex ALGORITHMS Made By Johnny EvansPassword Checker">
     <meta property="og:image" content="static/image/3.jpg">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
+    <link rel="manifest" href="static/manifest.json">
+    <link rel="apple-touch-icon" href="static/image/evans-72.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#000000">
+    <meta name="theme-color" content="#000000">
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <!-- Font Awesome CSS-->
@@ -52,7 +56,8 @@
         <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family"><h5>MAIN</h5></div>
         <ul class="sidebar-menu list-unstyled">
           <li class="sidebar-list-item">
-            <a href="https://hardcore-poitras-3023f6.netlify.app/" class="sidebar-link text-white" style="background-color: #c94b4b"></i><span>My Portfolio</span>
+            <a href="https://jevan.netlify.app/" class="sidebar-link text-white" style="background-color: #c94b4b">
+              <span>My Website</span>
             </a>
           </li>
         </ul>
@@ -65,22 +70,30 @@
               <!-- Form Elements -->
               <div class="col-lg-12 mb-5">
                 <div class="card" style="background: black">
-                  <div class="card-body" style="background: black">
-                    <h3 class="h6 mb-0 text-white text-center">
-                      {% if value.count > 0 %}
-                        <img src="static/image/bad.png" style="width: 10%; height: 10%;">
-                        <h3 class="h6 text-uppercase text-white mb-0">
-                          Your password <strong style="color: red">{{ value.password }}</strong> has been breached <strong style="color: red">{{ value.count }}</strong> times. I strongly advice you change to more secure one and i strongly recommend using Google Password to manage and safeguard your password.
-                        </h3>
-                      {% else %}
-                        <img src="static/image/good.png" style="width: 10%; height: 10%;">
-                        <h3 class="h6 text-uppercase text-white mb-0">
-                          Your password <strong style="color: red">{{ value.password }}</strong> is safe for now as it has not been breached but always use Google Password to manage and safeguard your password.
-                        </h3>
-                      {% endif %}
-                    </h3><br>
-                    <a href="index"><button class="btn my-10"  style="text-align: center;background-color:#c94b4b;">GO BACK</button></a>
-                    
+                	<div class="card-body text-center" style="background: black">
+        						{% if value.count > 0 %}
+        							<img src="static/image/bad.png" style="width: 20%; height: 20%;">
+        							<h3 class="h6 text-uppercase text-white" style="font-size: 0.5rem;">
+        							  Your password <strong style="color: red">{{ value.password }}</strong> has been breached <strong style="color: red">{{ value.count }}</strong> times.
+        							</h3>
+                      <h3 class="h6 text-uppercase text-white" style="font-size: 0.5rem;">
+                        I strongly advice you change to more secure one and i strongly recommend using Google Password to manage and safeguard your password.
+                      </h3>
+        						{% else %}
+        							<img src="static/image/good.png" style="width: 20%; height: 20%;">
+        							<h3 class="h6 text-uppercase text-white"  style="font-size: 0.5rem;">
+        							  Your password <strong style="color: red">{{ value.password }}</strong> is safe for now as it has not been breached.
+        							</h3>
+                      <h3 class="h6 text-uppercase text-white" style="font-size: 0.5rem;">
+                        I strongly advice you change to more secure one and i strongly recommend using Google Password to manage and safeguard your password.
+                      </h3>
+        						{% endif %}
+              		  <br>
+                  	<a href="index">
+                  		<button class="btn my-10"  style="text-align: center;background-color:#c94b4b;">
+                  			GO BACK
+                  		</button>
+                  	</a>
                   </div>
                 </div>
               </div>
@@ -93,7 +106,7 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="h6 text-white">Made By Johnny Evans</h4>
+                    <h4 class="h6 text-white">Copyright @Johnny Evans</h4>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
@@ -105,5 +118,6 @@
     <script src="static/js/popper.js/umd/popper.min.js"> </script>
     <script src="static/js/bootstrap.min.js"></script>
     <script src="static/js/front.js"></script>
+    <script src="static/js/app.js"></script>
   </body>
 </html>

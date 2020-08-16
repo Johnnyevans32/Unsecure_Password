@@ -23,7 +23,7 @@ def names():
 def page_not_found(error):
     return render_template('404.html'), 404
 
-@app.route('/submit_form', methods=['POST', 'GET'])
+@app.route('/analysis', methods=['POST', 'GET'])
 def form():
     if request.method == 'POST':
         data = request.form['password']
