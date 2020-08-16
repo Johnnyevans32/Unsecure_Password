@@ -28,7 +28,12 @@ def form():
     if request.method == 'POST':
         data = request.form['password']
    
-        info = main(data)
+        num = main(data)
+        numb = int(num)
+        info = {
+            "password" : data,
+            "count" : numb
+        }
         return render_template('message.html', value=info)
     else:
     	return 'bad'
@@ -71,4 +76,4 @@ def main(args):
            Password ""{args}"" Has not been Breached or hacked HOORAY!!! 
                    You can continue with this password!!
         ''')
-    return message
+    return count

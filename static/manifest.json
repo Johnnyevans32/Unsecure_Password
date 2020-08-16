@@ -1,0 +1,51 @@
+{
+  "name": "Password Checker",
+  "short_name": "Unsecure Words",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#c94b4b",
+  "theme_color": "#c94b4b", 
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "image/evans-72.png",
+      "type": "image/png", 
+      "sizes": "72x72"
+    },
+    {
+      "src": "image/evans-96.png",
+      "type": "image/png", 
+      "sizes": "96x96"
+    },
+    {
+      "src": "image/evans-128.png",
+      "type": "image/png", 
+      "sizes": "128x128"
+    },
+    {
+      "src": "image/evans-144.png",
+      "type": "image/png", 
+      "sizes": "144x144"
+    },
+    {
+      "src": "image/evans-152.png",
+      "type": "image/png", 
+      "sizes": "152x152"
+    },
+    {
+      "src": "image/evans-192.png",
+      "type": "image/png", 
+      "sizes": "192x192"
+    },
+    {
+      "src": "image/evans-384.png",
+      "type": "image/png", 
+      "sizes": "384x384"
+    },
+    {
+      "src": "image/evans-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
